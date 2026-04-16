@@ -128,6 +128,9 @@ async function getContentById(contentId, title) {
         'telugu-verbs-nenu': await getTeluguVerbNenuContent(),
         'telugu-verb-manamu': await getTeluguVerbManamuContent(),
         'telugu-verb-nuvvu': await getTeluguVerbNuvvuContent(),
+        'telugu-reads-deepavali': await getTeluguReadsDeepavaliContent(),
+        'telugu-reads-ugaadi': await getTeluguReadsUgaadiContent(),
+        'telugu-reads-sankranti': await getTeluguReadsSankrantiContent(),
         'swaras': getSanskritVowelsContent(),
         'consonants': isTeluguPage ? getTeluguConsonantsContent() : getSanskritConsonantsContent(),
         'vyanjanas': getSanskritConsonantsContent(),
@@ -1115,6 +1118,18 @@ async function getTeluguVerbManamuContent() {
 
 async function getTeluguVerbNuvvuContent() {
     return loadmd('telugu-tense-nuvvu.md');
+}
+
+async function getTeluguReadsDeepavaliContent() {
+    return loadmd('telugu-reads-deepavali.md');
+}
+
+async function getTeluguReadsUgaadiContent() {
+    return loadmd('telugu-reads-ugaadi.md');
+}
+
+async function getTeluguReadsSankrantiContent() {
+    return loadmd('telugu-reads-sankranti.md');
 }
 
 async function getSanskritLearnInSetsContent() {
