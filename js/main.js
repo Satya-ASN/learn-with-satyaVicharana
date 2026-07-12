@@ -117,34 +117,67 @@ async function getContentById(contentId, title) {
         'introduction': isTeluguPage ? getTeluguIntroContent() : getSanskritIntroContent(),
         'history': getHistoryContent(isTeluguPage),
         'vowels': isTeluguPage ? getTeluguVowelsContent() : getSanskritVowelsContent(),
+        'telugu-vowels': getTeluguVowelsContent(),
+        'telugu-consonants': getTeluguConsonantsContent(),
         'achhulu-gunintalu': await getTeluguAchhuluGunintaaluContent(),
         'hallulu-ottulu': await getTeluguHalluluOttuluContent(),
-        'words-simple': await getTeluguWordsSimpleContent(),
-        'words-gunintaalu': await getTeluguWordsGunintaaluContent(),
-        'words-vottulu': await getTeluguWordsVottuluContent(),
+        'telugu-words-simple': await getTeluguWordsSimpleContent(),
+        'telugu-words-gunintaalu': await getTeluguWordsGunintaaluContent(),
+        'telugu-words-vottulu': await getTeluguWordsVottuluContent(),
+		'telugu-words-complex': await getTeluguWordsComplexContent(),
+        
         'sets-opposites': await getTeluguSetsOppositesContent(),
         'telugu-karta-karma-kriya': await getTeluguKartaKarmaKriyaContent(),
         'telugu-verb-tenses': await getTeluguVerbTensesContent(),
         'telugu-verbs-nenu': await getTeluguVerbNenuContent(),
         'telugu-verb-manamu': await getTeluguVerbManamuContent(),
         'telugu-verb-nuvvu': await getTeluguVerbNuvvuContent(),
+        
         'telugu-reads-deepavali': await getTeluguReadsDeepavaliContent(),
         'telugu-reads-ugaadi': await getTeluguReadsUgaadiContent(),
         'telugu-reads-sankranti': await getTeluguReadsSankrantiContent(),
-        'swaras': getSanskritVowelsContent(),
         'consonants': isTeluguPage ? getTeluguConsonantsContent() : getSanskritConsonantsContent(),
-        'vyanjanas': getSanskritConsonantsContent(),
+        
         'numbers': getNumbersContent(isTeluguPage),
         'telugu-ankelu-kaalalu': getNumbersTimeContent(),
+        'telugu-birds': await getTeluguBirdsContent(),
+        'telugu-animals': await getTeluguAnimalsContent(),
+        'telugu-insects': await getTeluguInsectsContent(),
         'telugu-colors': getTeluguColorsContent(),
         'greetings': getGreetingsContent(isTeluguPage),
+        
         'basic-shlokas': getBasicShlokasContent(),
         'basic-words': getSanskritBasicWordsContent(),
         'avyaya': getSanskritAvyayaWordsContent(),
         'learnInSets': getSanskritLearnInSetsContent(),
+        
         'verb-read': await getSanskritVerbReadContent(),
         'verb-go': await getSanskritVerbGoContent(),
         'verb-see': await getSanskritVerbSeeContent(),
+        
+        'telugu-reads-deepavali': await getTeluguReadsDeepavaliContent(),
+        'telugu-reads-ugaadi': await getTeluguReadsUgaadiContent(),
+        'telugu-reads-sankranti': await getTeluguReadsSankrantiContent(),
+        
+        'swaras': getSanskritVowelsContent(),
+        'vyanjanas': getSanskritConsonantsContent(),
+        'sanskrit-reads-deepavali': await getSanskritReadsDeepavaliContent(),
+        'sanskrit-reads-ugaadi': await getSanskritReadsUgaadiContent(),
+        'sanskrit-reads-sankranti': await getSanskritReadsSankrantiContent(),
+
+        'Ganapati-Slokam': await getGanapatiSlokamContent(),
+
+        'sangeetam-intro': await getSangeetamIntroContent(),
+		'sarali-swaramulu': await getSaraliSwaramuluContent(),
+
+        'syamaleMeenakshi': await getNSSyamaleMeenakshiContent(),
+        'RaminchuvaaRevaruraa': await getNSRaminchuvaaRevaruraaContent(),
+        'VaraShivaBalam': await getNSVarashivaBalamContent(),
+        'SakthiSahitaGanapatim': await getNSSakthiSahitaGanapatimContent(),
+
+        'AdigoBhadraadri': await getSAdigoBhadraadriContent(),
+        'SitaKalyanaVaibhogame': await getSSitaKalyanaVaibhogameContent(),
+
     };
     
     // Return specific content or generate placeholder
@@ -276,127 +309,6 @@ function getSanskritIntroContent() {
 }
 
 /**
- * Telugu Vowels Content
- */
-function getTeluguVowelsContent() {
-    return `
-        <div class="lesson-content">
-            <header class="lesson-header">
-                <h1>Telugu Vowels (అచ్చులు)</h1>
-                <div class="lesson-meta">
-                    <span>📚 Script Basics</span>
-                    <span>⏱️ 15 min</span>
-                </div>
-            </header>
-            
-            <div class="lesson-body">
-                <p>Telugu has 16 vowels called <strong>అచ్చులు (Acchulu)</strong>. These are the foundation of the Telugu script, and every consonant carries an inherent 'a' (అ) sound.</p>
-                
-                <h2>అచ్చులు</h2>
-                
-                <div class="character-grid">
-                    <div class="character-card">
-                        <span class="char">అ</span>
-                        <span class="romanized">a</span>
-                    </div>
-                    <div class="character-card">
-                        <span class="char">ఆ</span>
-                        <span class="romanized">ā</span>
-                    </div>
-                    <div class="character-card">
-                        <span class="char">ఇ</span>
-                        <span class="romanized">i</span>
-                    </div>
-                    <div class="character-card">
-                        <span class="char">ఈ</span>
-                        <span class="romanized">ī</span>
-                    </div>
-                    <div class="character-card">
-                        <span class="char">ఉ</span>
-                        <span class="romanized">u</span>
-                    </div>
-                    <div class="character-card">
-                        <span class="char">ఊ</span>
-                        <span class="romanized">ū</span>
-                    </div>
-                </div>
-                <div class="character-grid">
-                    <div class="character-card">
-                        <span class="char">ఋ</span>
-                        <span class="romanized">aRu (True)</span>
-                    </div>
-                    <div class="character-card">
-                        <span class="char">ౠ</span>
-                        <span class="romanized">aRoo (maroon)</span>
-                    </div>
-                    <div class="character-card">
-                        <span class="char">ఎ</span>
-                        <span class="romanized">e</span>
-                    </div>
-                    <div class="character-card">
-                        <span class="char">ఏ</span>
-                        <span class="romanized">ē</span>
-                    </div>
-                    <div class="character-card">
-                        <span class="char">ఐ</span>
-                        <span class="romanized">ai</span>
-                    </div>
-                </div>
-                <div class="character-grid">
-                    <div class="character-card">
-                        <span class="char">ఒ</span>
-                        <span class="romanized">o</span>
-                    </div>
-                    <div class="character-card">
-                        <span class="char">ఓ</span>
-                        <span class="romanized">ō</span>
-                    </div>
-                    <div class="character-card">
-                        <span class="char">ఔ</span>
-                        <span class="romanized">au</span>
-                    </div>
-                </div>
-                <div class="character-grid">
-                    <div class="character-card">
-                        <span class="char">అం</span>
-                        <span class="romanized">aṃ (anusvara)</span>
-                    </div>
-                    <div class="character-card">
-                        <span class="char">అః</span>
-                        <span class="romanized">aḥ (visarga)</span>
-                    </div>
-                </div>
-                
-                <h2>Pronunciation Guide</h2>
-                <div class="example-box">
-                    <p><strong>Short vs Long Vowels:</strong></p>
-                    <p>అ (a) is short, like 'u' in "but"</p>
-                    <p>ఆ (ā) is long, like 'a' in "father"</p>
-                </div>
-                
-                <div class="tip-box">
-                    <span class="tip-icon">💡</span>
-                    <div class="tip-content">
-                        <strong>Practice Tip:</strong> Click on each character to hear its pronunciation. Practice writing each vowel 10 times to build muscle memory.
-                    </div>
-                </div>
-            </div>
-            
-            <nav class="lesson-nav">
-                <a href="#" class="nav-btn prev" data-content="alphabet-overview">
-                    <span>←</span>
-                    Previous: Alphabet Overview
-                </a>
-                <a href="#" class="nav-btn next" data-content="consonants">
-                    Next: Consonants
-                    <span>→</span>
-                </a>
-            </nav>
-        </div>
-    `;
-}
-
-/**
  * Sanskrit Vowels Content
  */
 function getSanskritVowelsContent() {
@@ -501,116 +413,6 @@ function getSanskritVowelsContent() {
     `;
 }
 
-/**
- * Telugu Consonants Content
- */
-function getTeluguConsonantsContent() {
-    return `
-        <div class="lesson-content">
-            <header class="lesson-header">
-                <h1>Telugu Consonants (హల్లులు)</h1>
-                <div class="lesson-meta">
-                    <span>📚 Script Basics</span>
-                    <span>⏱️ 20 min</span>
-                </div>
-            </header>
-            
-            <div class="lesson-body">
-                <p>Telugu has 36 consonants called <strong>హల్లులు (Hallulu)</strong>. Each consonant inherently carries the vowel sound 'అ' (a).</p>
-                
-                <h2>Velar Consonants (కంఠ్యములు)</h2>
-                <div class="character-grid">
-                    <div class="character-card">
-                        <span class="char">క</span>
-                        <span class="romanized">ka</span>
-                    </div>
-                    <div class="character-card">
-                        <span class="char">ఖ</span>
-                        <span class="romanized">kha</span>
-                    </div>
-                    <div class="character-card">
-                        <span class="char">గ</span>
-                        <span class="romanized">ga</span>
-                    </div>
-                    <div class="character-card">
-                        <span class="char">ఘ</span>
-                        <span class="romanized">gha</span>
-                    </div>
-                    <div class="character-card">
-                        <span class="char">ఙ</span>
-                        <span class="romanized">ṅa</span>
-                    </div>
-                </div>
-                
-                <h2>Palatal Consonants (తాలవ్యములు)</h2>
-                <div class="character-grid">
-                    <div class="character-card">
-                        <span class="char">చ</span>
-                        <span class="romanized">ca</span>
-                    </div>
-                    <div class="character-card">
-                        <span class="char">ఛ</span>
-                        <span class="romanized">cha</span>
-                    </div>
-                    <div class="character-card">
-                        <span class="char">జ</span>
-                        <span class="romanized">ja</span>
-                    </div>
-                    <div class="character-card">
-                        <span class="char">ఝ</span>
-                        <span class="romanized">jha</span>
-                    </div>
-                    <div class="character-card">
-                        <span class="char">ఞ</span>
-                        <span class="romanized">ña</span>
-                    </div>
-                </div>
-                
-                <h2>Retroflex Consonants (మూర్ధన్యములు)</h2>
-                <div class="character-grid">
-                    <div class="character-card">
-                        <span class="char">ట</span>
-                        <span class="romanized">ṭa</span>
-                    </div>
-                    <div class="character-card">
-                        <span class="char">ఠ</span>
-                        <span class="romanized">ṭha</span>
-                    </div>
-                    <div class="character-card">
-                        <span class="char">డ</span>
-                        <span class="romanized">ḍa</span>
-                    </div>
-                    <div class="character-card">
-                        <span class="char">ఢ</span>
-                        <span class="romanized">ḍha</span>
-                    </div>
-                    <div class="character-card">
-                        <span class="char">ణ</span>
-                        <span class="romanized">ṇa</span>
-                    </div>
-                </div>
-                
-                <div class="tip-box">
-                    <span class="tip-icon">💡</span>
-                    <div class="tip-content">
-                        <strong>Learning Tip:</strong> Notice the pattern—each row has 5 consonants that share the same point of articulation. This systematic arrangement makes learning easier!
-                    </div>
-                </div>
-            </div>
-            
-            <nav class="lesson-nav">
-                <a href="#" class="nav-btn prev" data-content="vowels">
-                    <span>←</span>
-                    Previous: Vowels
-                </a>
-                <a href="#" class="nav-btn next" data-content="conjuncts">
-                    Next: Conjunct Letters
-                    <span>→</span>
-                </a>
-            </nav>
-        </div>
-    `;
-}
 
 /**
  * Sanskrit Consonants Content
@@ -1053,111 +855,294 @@ function getBasicShlokasContent() {
 getTeluguAchhuluGunintaaluContent
 */
 async function getTeluguAchhuluGunintaaluContent() {
-    return loadmd('achhulu-gunintaalu.md');
+    return loadContent_md_html('md/telugu/achhulu-gunintaalu.md');
 }
 
 async function getTeluguHalluluOttuluContent() {
-    return loadmd('telugu-vottulu.md');
+    return loadContent_md_html('md/telugu/telugu-vottulu.md');
 }
 
 async function getTeluguWordsSimpleContent() {
-    return loadFlashcardCSV('simple.csv');
+    return loadFlashcardCSV('telugu-simpleAksharaalu.csv');
 }
 
 async function getTeluguWordsGunintaaluContent() {
-    return loadFlashcardCSV('gunintaalu.csv');
+    return loadFlashcardCSV('telugu-gunintaaluAksharaalu.csv');
 }
 
 async function getTeluguWordsVottuluContent() {
-    return loadFlashcardCSV('vottulu.csv');
+    return loadFlashcardCSV('telugu-vottuluAksharaalu.csv');
+}
+
+async function getTeluguWordsComplexContent() {
+    return loadFlashcardCSV('telugu-complexAksharaalu.csv');
 }
 
 async function getNumbersTimeContent() {
-    return loadmd('telugu-ankelu-kaalalu.md');
+    return loadContent_md_html('md/telugu/telugu-ankelu-kaalalu.md');
 }
 
 async function getTeluguColorsContent() {
-    return loadmd('telugu-colors.md');
+    return loadContent_md_html('md/telugu/telugu-colors.md');
 }
 
 async function getTeluguSetsOppositesContent() {
-    return loadmd('sets-opposites.md');
+    return loadContent_md_html('md/telugu/sets-opposites.md');
 }
 
 async function getSanskritBasicWordsContent() {
-    return loadmd('sanskrit-basic-words.md');
+    return loadContent_md_html('md/sanskrit/sanskrit-basic-words.md');
 }
 async function getSanskritVerbGoContent(){
-    return loadmd('sanskrit-verb-go.md');
+    return loadContent_md_html('md/sanskrit/sanskrit-verb-go.md');
 }
 
 async function getSanskritVerbReadContent(){
-    return loadmd1('sanskrit-verb-read.md');
+    return loadContent_md_html('md/sanskrit/sanskrit-verb-read.md');
 }
 
 async function getSanskritVerbSeeContent(){
-    return loadmd('sanskrit-verb-see.md');
+    return loadContent_md_html('md/sanskrit/sanskrit-verb-see.md');
 }
 
 async function getTeluguKartaKarmaKriyaContent() {
-    return loadmd('karta-karma-kriya.md');
+    return loadContent_md_html('md/telugu/karta-karma-kriya.md');
 }
 
 async function getTeluguVerbTensesContent(){
-    return loadmd('telugu-verb-tenses.md');
+    return loadContent_md_html('md/telugu/telugu-verb-tenses.md');
 }
 
 
 async function getTeluguVerbNenuContent() {
-    return loadmd('telugu-tense-nenu.md');
+    return loadContent_md_html('md/telugu/telugu-tense-nenu.md');
 }
 
 async function getTeluguVerbManamuContent() {
-    return loadmd('telugu-tense-manamu.md');
+    return loadContent_md_html('md/telugu/telugu-tense-manamu.md');
 }
 
 async function getTeluguVerbNuvvuContent() {
-    return loadmd('telugu-tense-nuvvu.md');
+    return loadContent_md_html('md/telugu/telugu-tense-nuvvu.md');
 }
 
 async function getTeluguReadsDeepavaliContent() {
-    return loadmd('telugu-reads-deepavali.md');
+    return loadContent_md_html('md/telugu/telugu-reads-deepavali.md');
 }
 
 async function getTeluguReadsUgaadiContent() {
-    return loadmd('telugu-reads-ugaadi.md');
+    return loadContent_md_html('md/telugu/telugu-reads-ugaadi.md');
 }
 
 async function getTeluguReadsSankrantiContent() {
-    return loadmd('telugu-reads-sankranti.md');
+    return loadContent_md_html('md/telugu/telugu-reads-sankranti.md');
 }
 
 async function getSanskritLearnInSetsContent() {
-    return loadmd('sanskrit-learn-in-sets.md');
+    return loadContent_md_html('md/sanskrit/sanskrit-learn-in-sets.md');
 }
 
 async function getSanskritAvyayaWordsContent() {
-    return loadmd('sanskrit-avyaya.md');
+    return loadContent_md_html('md/sanskrit/sanskrit-avyaya.md');
 }
 
-async function loadmd1(fileName){
+async function getSanskritReadsDeepavaliContent() {
+    return loadContent_md_html('md/sanskrit/sanskrit-reads-deepavali.md');
+}
+
+async function getSanskritReadsUgaadiContent() {
+    return loadContent_md_html('md/sanskrit/sanskrit-reads-ugaadi.md');
+}
+
+async function getSanskritReadsSankrantiContent() {
+    return loadContent_md_html('md/sanskrit/sanskrit-reads-sankranti.md');
+}
+
+async function getTeluguBirdsContent() {
+    return loadAllImages('birds.csv', 'పక్షులు', 'Next Bird', 'telugu-birds');
+}
+
+async function getTeluguAnimalsContent() {
+    return loadAllImages('animals.csv', 'జంతువులు', 'Next Animal', 'telugu-animals');
+}
+
+async function getTeluguInsectsContent() {
+    return loadAllImages('insects.csv', 'కీటకాలుు', 'Next Insect', 'telugu-insects');
+}
+
+async function getTeluguVowelsContent() {
+    return loadContent_md_html('pages/telugu-achchulu.html');
+}
+async function getTeluguConsonantsContent() {
+    return loadContent_md_html('pages/telugu-hallulu.html');
+}
+
+async function getGanapatiSlokamContent() {
+    return loadContent_md_html('pages/GanapatiSlokam.html');
+}
+
+async function getSangeetamIntroContent() {
+    return loadContent_md_html('md/sangeetam/sangeetam_intro.md');
+}
+
+async function getSaraliSwaramuluContent() {
+    return loadContent_md_html('md/sangeetam/sarali_swaramulu.md');
+}
+
+async function getNSSyamaleMeenakshiContent() {
+    return loadContent_md_html('md/sangeetam/N_SyamaleMeenakshi.md');
+}
+
+async function getNSRaminchuvaaRevaruraaContent() {
+    return loadContent_md_html('md/sangeetam/N_RaminchuvaaRevarura.md');
+}
+
+async function getNSVarashivaBalamContent() {
+    return loadContent_md_html('md/sangeetam/N_VarashivaBalam.md');
+}
+
+async function getNSSakthiSahitaGanapatimContent() {
+    return loadContent_md_html('md/sangeetam/N_SakthiSahitaGanapatim.md');
+}
+
+async function getSAdigoBhadraadriContent() {
+    return loadContent_md_html('md/sangeetam/S_AdigoBhadradri.md');
+}
+
+async function getSSitaKalyanaVaibhogameContent() {
+    return loadContent_md_html('md/sangeetam/S_SitaKalyanaVaibogame.md');
+}
+
+async function loadContent_md_html(fileName) {
     try {
-        const response = await fetch(`md/${fileName}`);
+        const response = await fetch(`${fileName}`);
+        
         if (!response.ok) {
-            throw new Error(`Failed to load "${fileName}": HTTP ${response.status}`);
-        } else {
-            const text = await response.text();
-            return marked.parse(text);
+            throw new Error(`Failed to load ${fileName}: ${response.status}`);
         }
+
+        const text = await response.text();
+
+        // 👉 Detect file type
+        if (fileName.endsWith('.md')) {
+            return marked.parse(text);   // Markdown → HTML
+        } else {
+            return text;                 // HTML → render directly
+        }
+
     } catch (err) {
-        console.error(err);
+        console.error(`Error loading file: ${err.message}`);
         return "<p>Error loading content</p>";
     }
 }
 
+async function loadAllImages(fileName, imgCategory, btnName, loadImageContent) {
+  try {
+    const response = await fetch(`csv/${fileName}`);
+    const text = await response.text();
+
+    const rows = parseCSV(text).filter(r => r[0] && r[0].trim() !== '');
+    const dataRows = rows.slice(1); // skip header row
+
+    const tableRows = dataRows.map(row => {
+      const imageFile = row[0] ? row[0].trim() : '';
+      const nameEn    = row[1] ? row[1].trim() : '';
+      const nameTe    = row[2] ? row[2].trim() : '';
+      const details   = row[4] ? `${row[4].trim()} --> *${nameTe}*` : '';
+
+      return `
+        <tr>
+          <td class="showTell-td-english"  font-size= 16px>${details}</td>
+        </tr>
+        <tr>
+          <td class="showTell-td-img" rowspan="2">
+            <img src="images/${imageFile}" alt="${nameEn}" class="showTell-img" />
+          </td>
+          <td class="showTell-td-telugu" font-size= 32px>${nameTe}</td>
+        </tr>
+        <tr>
+          <td class="showTell-td-english"  font-size= 16px>${nameEn}</td>
+        </tr>
+      `;
+    }).join('');
+
+    return `
+      <div class="showTell-card">
+        <table class="showTell-table">
+          <tbody>
+            ${tableRows}
+          </tbody>
+        </table>
+      </div>
+    `;
+
+  } catch (err) {
+    console.error(err);
+    return `<p style="color:red;">Error loading data from csv/${fileName}. Make sure the file exists.</p>`;
+  }
+}
+
+async function loadImage(fileName, imgCategory, btnName, loadImageContent) {
+  try {
+    const response = await fetch(`csv/${fileName}`);
+    const text = await response.text();
+
+    const rows = parseCSV(text).filter(r => r[0] && r[0].trim() !== '');
+    const dataRows = rows.slice(1); // skip header row
+    const row = dataRows[Math.floor(Math.random() * dataRows.length)];
+
+    const imageFile = row[0] ? row[0].trim() : '';
+    const nameEn    = row[1] ? row[1].trim() : '';
+    const nameTe    = row[2] ? row[2].trim() : '';
+    const details   = row[4] ? row[4].trim() : '';
+
+    return `
+      <div class="showTell-card">
+        <div class="showTell-top">
+          <div class="showTell-image-wrap">
+            <img src="images/${imageFile}" alt="${nameTe}" class="showTell-img" />
+          </div>
+          <div class="showTell-names">
+            <div class="showTell-telugu">${nameTe}</div>
+            <div class="showTell-english">${nameEn}</div>
+          </div>
+          <div class="showTell-image-wrap">
+            <div class="showTell-telugu">${details}</div>
+          </div>
+        </div>
+        <button onclick="loadContent('${loadImageContent}', '${imgCategory}')" class="showTell-next-btn">🔄 ${btnName}</button>
+      </div>
+    `;
+
+  } catch (err) {
+    console.error(err);
+    return `<p style="color:red;">Error loading data from csv/${fileName}. Make sure the file exists.</p>`;
+  }
+}
+
+function parseCSV(text) {
+  const rows = [];
+  const lines = text.split('\n');
+  for (const line of lines) {
+    if (!line.trim()) continue;
+    const cols = [];
+    let cur = '', inQuote = false;
+    for (let i = 0; i < line.length; i++) {
+      const ch = line[i];
+      if (ch === '"') { inQuote = !inQuote; }
+      else if (ch === ',' && !inQuote) { cols.push(cur); cur = ''; }
+      else { cur += ch; }
+    }
+    cols.push(cur);
+    rows.push(cols);
+  }
+  return rows;
+}
+
+/*
 async function loadmd(fileName){
     try {
-        const response = await fetch(`md/${fileName}`);
+        const response = await fetch(`${fileName}`);
         if (!response.ok) {
             throw new Error(`Failed to load "${fileName}": HTTP ${response.status}`);
         } else {
@@ -1169,7 +1154,7 @@ async function loadmd(fileName){
         return "<p>Error loading content</p>";
     }
 }
-
+*/
 
 // ---------- FLASHCARD FEATURE ---------- //
 async function loadFlashcardCSV(fileName) {
