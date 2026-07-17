@@ -170,13 +170,15 @@ async function getContentById(contentId, title) {
         'sangeetam-intro': await getSangeetamIntroContent(),
 		'sarali-swaramulu': await getSaraliSwaramuluContent(),
 
-        'syamaleMeenakshi': await getNSSyamaleMeenakshiContent(),
-        'RaminchuvaaRevaruraa': await getNSRaminchuvaaRevaruraaContent(),
-        'VaraShivaBalam': await getNSVarashivaBalamContent(),
-        'SakthiSahitaGanapatim': await getNSSakthiSahitaGanapatimContent(),
+        'syamaleMeenakshi': await getNS_SyamaleMeenakshiContent(),
+        'RaminchuvaaRevaruraa': await getNS_RaminchuvaaRevaruraaContent(),
+        'VaraShivaBalam': await getNS_VarashivaBalamContent(),
+        'SakthiSahitaGanapatim': await getNS_SakthiSahitaGanapatimContent(),
 
-        'AdigoBhadraadri': await getSAdigoBhadraadriContent(),
-        'SitaKalyanaVaibhogame': await getSSitaKalyanaVaibhogameContent(),
+        'VaraVeena': await getG_VaraVeenaContent(),
+
+        'AdigoBhadraadri': await getS_AdigoBhadraadriContent(),
+        'SitaKalyanaVaibhogame': await getS_SitaKalyanaVaibhogameContent(),
 
     };
     
@@ -989,27 +991,31 @@ async function getSaraliSwaramuluContent() {
     return loadContent_md_html('md/sangeetam/sarali_swaramulu.md');
 }
 
-async function getNSSyamaleMeenakshiContent() {
+async function getNS_SyamaleMeenakshiContent() {
     return loadContent_md_html('md/sangeetam/N_SyamaleMeenakshi.md');
 }
 
-async function getNSRaminchuvaaRevaruraaContent() {
+async function getNS_RaminchuvaaRevaruraaContent() {
     return loadContent_md_html('md/sangeetam/N_RaminchuvaaRevarura.md');
 }
 
-async function getNSVarashivaBalamContent() {
+async function getNS_VarashivaBalamContent() {
     return loadContent_md_html('md/sangeetam/N_VarashivaBalam.md');
 }
 
-async function getNSSakthiSahitaGanapatimContent() {
+async function getNS_SakthiSahitaGanapatimContent() {
     return loadContent_md_html('md/sangeetam/N_SakthiSahitaGanapatim.md');
 }
 
-async function getSAdigoBhadraadriContent() {
+async function getG_VaraVeenaContent() {
+    return loadContent_md_html('md/sangeetam/G_Varaveena.md');
+}
+
+async function getS_AdigoBhadraadriContent() {
     return loadContent_md_html('md/sangeetam/S_AdigoBhadradri.md');
 }
 
-async function getSSitaKalyanaVaibhogameContent() {
+async function getS_SitaKalyanaVaibhogameContent() {
     return loadContent_md_html('md/sangeetam/S_SitaKalyanaVaibogame.md');
 }
 
