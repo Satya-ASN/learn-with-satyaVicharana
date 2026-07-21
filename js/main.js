@@ -180,6 +180,8 @@ async function getContentById(contentId, title) {
         'AdigoBhadraadri': await getS_AdigoBhadraadriContent(),
         'SitaKalyanaVaibhogame': await getS_SitaKalyanaVaibhogameContent(),
 
+        'MS_maatemantramu': await getMS_maatemantramuContent(),
+        'MS_yedutanilichindi_choodu': await getMS_yedutanilichindi_chooduContent(),
     };
     
     // Return specific content or generate placeholder
@@ -1018,6 +1020,15 @@ async function getS_AdigoBhadraadriContent() {
 async function getS_SitaKalyanaVaibhogameContent() {
     return loadContent_md_html('md/sangeetam/S_SitaKalyanaVaibogame.md');
 }
+
+async function getMS_maatemantramuContent() {
+    return loadContent_md_html('md/sangeetam/MS_maatemantramu.md');
+}
+
+async function getMS_yedutanilichindi_chooduContent() {
+    return loadContent_md_html('md/sangeetam/MS_yedutanilichindi_choodu.md');
+}
+
 
 async function loadContent_md_html(fileName) {
     try {
