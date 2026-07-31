@@ -182,6 +182,8 @@ async function getContentById(contentId, title) {
         'SitaKalyanaVaibhogame': await getK_SitaKalyanaVaibhogameContent(),
         'RamaChandraaya': await getK_RamaChandraayaContent(),
 
+        'Lingaastakam': await getA_LingaastakamContent(),
+
         'MS_maatemantramu': await getMS_maatemantramuContent(),
         'MS_yedutanilichindi_choodu': await getMS_yedutanilichindi_chooduContent(),
     };
@@ -1029,6 +1031,14 @@ async function getK_RamaChandraayaContent() {
 
 async function getK_SitaKalyanaVaibhogameContent() {
     return loadContent_md_html('md/sangeetam/K_SitaKalyanaVaibogame.md');
+}
+
+async function getK_SitaKalyanaVaibhogameContent() {
+    return loadContent_md_html('md/sangeetam/K_SitaKalyanaVaibogame.md');
+}
+
+async function getA_LingaastakamContent() {
+    return loadContent_md_html('md/sangeetam/A_Lingaastakam.md');
 }
 
 async function getMS_maatemantramuContent() {

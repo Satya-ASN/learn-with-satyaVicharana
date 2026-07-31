@@ -25,25 +25,15 @@ You grant ("daayaki") the boons ("phala") desired ("vaanchita") by your devotees
 O Mother ("janani") of Brahma, who is seated on a lotus ("saraseeja-asana")!
 Victory ("jaya") to you.
 
-|--|--|--|--|
-|--|--|--|--|
-G  G  |  P  ,  P  ,  |  D  P  |  S  ,  S  ,  |
-Va  ra  |  vee  -  na  -  |  Mru  du  |  Pa  -  ni  -  |
-R  S  |  D  D  P  ,  |  D  P  | G  G  R  ,  |
-Va  na  | ru  ha  Lo  -  |  cha  na  | Raa  -  ni  -  |
-G  P  |  D  S  D  ,  |  D  P  | G  G  R  ,  |
-Su  ru  | chi  ra  Bam  -  |  bha  ra  | Ve  -  ni  -  |
-G  G  |  D  P  G  ,  |  P  G  |  G  R  S  ,  |
-Su  ra  | nu  tha  Kal  -  |  ya  -  |  -  -  ni  -  |
-G  G  |  G  G  R  G  |  P  G  | P  ,  P  ,  |
-Ni  ru  |  pa  ma Shu  bha  |  Gu  na  | Lo  -  la  -  |
-G  G  |  D  P  D  ,  |  D  P  |  S  ,  S  ,  |
-Ni  ra  | thi  Ja  ya  -  |  Pra  da  | See  -  la  -  |
-D  G  |  R  R  S  S  |  D  S  | D  D  D  P  |
-Va  ra  | da  -  Pri  ya  |  Ran  ga  | naa  -  ya  ki  |
-G  P  |  D  S  D  P  |  D  P  | G  G  R  S  |
-Vaa  -  |  nchitha  Pha  la  |  Daa  -  | -  -  ya  ki  |
-S  R  |  G  ,  G  ,  |  G  R  | P  G  R  ,  |
-Sa  ra  | si  -  ja  -  |  sa  na  | Ja  na  ni  -  |
-S  R  |  S  G  R  S  |  
-Ja  ya  | ja  ya  ja  ya  |
+|--|--|--|--|--|--|--|--|
+|--|--|--|--|--|--|--|--|
+G  G  |  P  ,  P  ,  |  D  P  |  S  ,  S  ,  |R  S  |  D  D  P  ,  |  D  P  | G  G  R  ,  |
+Vara  |  vee-na - |Mrudu  |  Pa-ni -|Vana  | ruha  Lo - |chana|Raa-ni - |
+G  P  |  D  S  D  ,  |  D  P  | G  G  R  ,  |G  G  |  D  P  G  ,  |  P  G  |  G  R  S  ,  |
+Suru|chira  Bam-|bhara|Ve-ni-|Sura | nutha  Kal-|ya-|--ni-|
+G  G  |  G  G  R  G  |  P  G  | P  ,  P  ,  |G  G  |  D  P  D  ,  |  D  P  |  S  ,  S  ,  |
+Niru |pama Shubha |Guna| Lo-la - |Nira  | thiJaya - |  Prada | See-la - |
+D  G  |  R  R  S  S  |  D  S  | D  D  D  P  |G  P  |  D  S  D  P  |  D  P  | G  G  R  S  |
+Vara  | da - Priya  |  Ranga  | naa-yaki  |Vaa-|  nchitha  Phala  |Daa-| --yaki  |
+S  R  |  G  ,  G  ,  |  G  R  | P  G  R  ,  |S  R  |  S  G  R  S  |  
+Sara  | si-ja  -  |  sana  | Janani  -  |Jaya  | jaya jaya  |
