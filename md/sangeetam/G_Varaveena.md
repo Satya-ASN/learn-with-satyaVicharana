@@ -1,9 +1,10 @@
-Varaveena
-
+<h2>Varaveena</h2>
+<h3>
 Ragam: Mohanam  (28th melakartha janyam)
 Talam:  Rupakam  
 Chaturasra Jathi
 Arohanam : S R2 G2 PD2 S  Avarohanam: S D2 PG2 R2 S
+</h3>
 
 Sahityam:
 

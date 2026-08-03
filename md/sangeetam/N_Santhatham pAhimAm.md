@@ -13,21 +13,13 @@ Ava: Ṡ N*3 D₂ P M1 G₃  R₂  S
 Composer: Muttuswaami Dikshitar
 <br>
 
-|-|-|
-|---|---|
-S , S , R , | Ṇ , , S  R ,
-santhatham  | pAhimAm
-G , G ,  M ,| G , , R  S ,
-sangeetha  | syAmalE
-R , S , Ṇ ,  | S , ,   P̣ Ḍ Ṇ
-sarvAdhA rE  | Janani
-R , S , Ṇ ,  | S ,   -   -
-sarvAdhA  	| rE
-P , P , P ,  | P , , M G ,
-chinthinthAr  | dha pradE
-M , M , M ,	 | M , , G R ,
-Chith-rUpi 	 | nee sivE
-G , M G R S  | G , , M P ,
-SreeGuruhuha  | sEvithE
-D P M , G ,  | R , S ,  , ,
-Siva mOha 	 | kA rE
+|-|-|-|-|
+|---|---|---|---|
+S , S , R , | Ṇ , , S  R , | G , G ,  M ,| G , , R  S ,
+santhatham  | pAhimAm | sangeetha  | syAmalE
+R , S , Ṇ ,  | S , ,   P̣ Ḍ Ṇ | R , S , Ṇ ,  | S ,   -   -
+sarvAdhA rE  | Janani | sarvAdhA  	| rE
+P , P , P ,  | P , , M G , | M , M , M ,	 | M , , G R ,
+chinthinthAr  | dha pradE | Chith-rUpi 	 | nee sivE
+G , M G R S  | G , , M P , | D P M , G ,  | R , S ,  , ,
+SreeGuruhuha  | sEvithE | Siva mOha 	 | kA rE

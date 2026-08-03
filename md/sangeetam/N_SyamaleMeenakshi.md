@@ -27,31 +27,16 @@ pamara mochani pankaja lochani
 padmasana vaani hari lakshmi vinuthe shambhavi
 <br>
 
-|1234 - 1234 |1234 - 1234|
-|----|----|
-S , , R   G ,  M ,  | P , , , P , , ,
-Sya	male  mee	 | na   kshi
-|
-D , ,  N 	s* ,  s* N  | D , P ,  M , G ,
-|  | P , , ,  G ,
-sun	da  re   swara | sa  kshi
-|
-M , D , M ,  R , 	 | G , P ,  G , S ,
-Shanka  ri   gu | ru gu	  ha 	sa
-|
-R , M ,  R ,  N ,  | S , , ,   S , , ,
-mudhbha	  ve   shi | ve	  va
-|
-P , , ,   P ,   P ,  | M , , ,   M , M ,
-pa	  ma  ra 	|  mo cha ni
-|
-G , , ,  G ,   G ,  | R , , ,  R , R ,
-pan		 ka  ja 	 | lo  cha	ni
-|
-P , , ,   P ,  D P 	 | M , , ,  M , P M 
-pa 	  	dmasana   	 | vaa ni  hari
-|
-G , , ,   	G ,   M G 	 | R , , ,  R , G R
-la  kshmi  vinu	 | the   shambhavi
+|1234 | 1234 |1234 | 1234|1234 | 1234 |1234 | 1234|
+|--|--|--|--|--|--|--|--|
+S , , R   G ,  M ,  | P , , , P , , , | D , ,  N 	s* ,  s* N  | D , P ,  M , G ,
+|  | | | P , , ,  G ,
+Sya	male  mee	 | na   kshi | sun	da  re   swara | sa  kshi
+M , D , M ,  R , 	 | G , P ,  G , S ,| R , M ,  R ,  N ,  | S , , ,   S , , ,
+Shanka  ri   gu | ru gu	  ha 	sa | mudhbha	  ve   shi | ve	  va
+P , , ,   P ,   P ,  | M , , ,   M , M ,|G , , ,  G ,   G ,  | R , , ,  R , R ,
+pa	  ma  ra 	|  mo cha ni | pan		 ka  ja 	 | lo  cha	ni
+P , , ,   P ,  D P 	 | M , , ,  M , P M | G , , ,   	G ,   M G 	 | R , , ,  R , G R
+pa 	  	dmasana   	 | vaa ni  hari | la  kshmi  vinu	 | the   shambhavi
 Repeat first 4 lines
 </h4>

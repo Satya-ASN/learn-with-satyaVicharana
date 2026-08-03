@@ -181,6 +181,7 @@ async function getContentById(contentId, title) {
         'AdigoBhadraadri': await getK_AdigoBhadraadriContent(),
         'SitaKalyanaVaibhogame': await getK_SitaKalyanaVaibhogameContent(),
         'RamaChandraaya': await getK_RamaChandraayaContent(),
+        'muddugaareYashoda': await getK_muddugaareYashodaContent(),
 
         'Lingaastakam': await getA_LingaastakamContent(),
 
@@ -1035,6 +1036,10 @@ async function getK_SitaKalyanaVaibhogameContent() {
 
 async function getK_SitaKalyanaVaibhogameContent() {
     return loadContent_md_html('md/sangeetam/K_SitaKalyanaVaibogame.md');
+}
+
+async function getK_muddugaareYashodaContent() {
+    return loadContent_md_html('md/sangeetam/K_muddugaareYashoda.md');
 }
 
 async function getA_LingaastakamContent() {
